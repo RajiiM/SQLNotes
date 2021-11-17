@@ -1,0 +1,37 @@
+SQL:
+
+CREATE TABLE table_name
+(
+column1 datatype,
+column2 datatype,
+column3 datatype
+);
+
+INSERT INTO table_name (column1, column2, column3....)  
+VALUES (value1, value2, value3.....); 
+
+INSERT INTO table_name (column1, column2, column)  
+VALUES (value1, value2, value3),(value4, value5, value6),(value7, value8, value9); 
+
+UPDATE table_name SET column_name1= value1
+WHERE condition 
+
+ALTER TABLE table_name ADD column_name column_datatype
+
+DELETE FROM table_name WHERE condition;
+
+DELETE FROM table_name 
+
+SELECT * FROM table_name; 
+
+SELECT column FROM Students
+
+SELECT * FROM Students WHERE Condition
+
+TRUNCATE TABLE table_name
+
+DROP TABLE table_name;
+
+SELECT DISTINCT column_name FROM table_name;
+
+
