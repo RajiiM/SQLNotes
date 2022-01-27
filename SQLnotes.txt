@@ -1,5 +1,4 @@
-SQL:
-
+//CREATE TABLE:
 CREATE TABLE table_name
 (
 column1 datatype,
@@ -7,31 +6,45 @@ column2 datatype,
 column3 datatype
 );
 
+//ALTER
+ALTER TABLE table_name ADD (column_name column_datatype);
+ALTER TABLE table_name MODIFY (column_name column_datatype);
+ALTER TABLE table_name DROP COLUMN (column_name column_datatype);
+
+//RENAME
+RENAME TABLE old_table_name to new_table_name;
+RENAME old_table_name to new_table_name;
+
+//TRUNCATE
+TRUNCATE TABLE table_name;
+
+//DROP
+DROP TABLE table_name;
+
+=============================================================================
+
+//INSERT
 INSERT INTO table_name (column1, column2, column3....)  
 VALUES (value1, value2, value3.....); 
 
-INSERT INTO table_name (column1, column2, column)  
+//INSERT MANY DATA AT A TIME
+INSERT INTO table_name (column1, column2, column3)  
 VALUES (value1, value2, value3),(value4, value5, value6),(value7, value8, value9); 
 
+//UPDATE
 UPDATE table_name SET column_name1= value1
-WHERE condition 
+WHERE condition;
 
-ALTER TABLE table_name ADD column_name column_datatype
-
+//DELETE
 DELETE FROM table_name WHERE condition;
+DELETE FROM table_name; 
 
-DELETE FROM table_name 
+============================================================================
 
+//SELECT
 SELECT * FROM table_name; 
+SELECT column_name FROM table_name;
+SELECT * FROM table_name WHERE Condition;
 
-SELECT column FROM Students
-
-SELECT * FROM Students WHERE Condition
-
-TRUNCATE TABLE table_name
-
-DROP TABLE table_name;
-
-SELECT DISTINCT column_name FROM table_name;
-
+============================================================================
 
